@@ -11,11 +11,13 @@ config$TempProjPathTabs <- paste0(tempdir(),"/SWTempProj/tabs/")
 # Package names
 packages <- c("devtools", "shiny", "shinythemes", "shinydashboard", "shinyjs", "yaml", "readr", "stringr", "shinyWidgets", "bslib", "shinytest2")
 
-# # Install packages not yet installed
-# installed_packages <- packages %in% rownames(installed.packages())
-# if (any(installed_packages == FALSE)) {
-#   install.packages(packages[!installed_packages])
-# }
+# Try loading packages
+installedPackages <- find.package(packages)
+
+# Install packages not yet installed
+if (!(length(installedPackages) == length(packages))){
+  install.packages(packages)
+}
 
 # Packages loading
 invisible(lapply(packages, library, character.only = TRUE))

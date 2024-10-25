@@ -79,7 +79,7 @@ TBA
 
 Test are implemented as *continuous integration* by CircleCI. Continuous integration is a DevOps software development practice where code changes are regularly merge into a central repository, after which automated builds and tests are run.
 
-The *source* of tests covering the code of the package are available in [tests](https://github.com/urniaz/ShinyWizard/blob/master/tests) folder of the repository.
+The *source* of tests covering the code of the package are available in [tests](https://github.com/urniaz/ShinyWizard/blob/master/tests) folder of the repository.  
 
 
 ## 4. How to cite
