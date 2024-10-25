@@ -43,7 +43,7 @@ fluidPage(
 
 
 # Theme selector
-   ShinyWizard::ShinyWizzardThemeSelector()
+   ShinyWizzardThemeSelector()
 
   )
 )

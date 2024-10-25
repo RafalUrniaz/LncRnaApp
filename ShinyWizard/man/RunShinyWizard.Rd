@@ -2,21 +2,25 @@
 % Please edit documentation in R/RunShinyWizzard.R
 \name{RunShinyWizard}
 \alias{RunShinyWizard}
-\title{Run ShinyWizard builder or project app}
+\title{Run ShinyWizard builder / project app}
 \usage{
 RunShinyWizard(loc = NULL, devMode = FALSE)
 }
 \arguments{
-\item{loc}{external directory to project zip file, when NULL runs builder}
+\item{loc}{file path to app file (*.zip), when NULL runs builder}
 
-\item{devMode}{when TRUE the developer mode is used. It means all tasks run by separate background jobs thus the console is not blocked. It works by R Studio API so works only with R studio. It is mode only for development facilitate. Should not be used for production.}
+\item{devMode}{when TRUE the developer mode is used. It means all tasks run by separate background jobs and the console is not blocked. It works by R Studio API so works only with R studio. It is mode only for development facilitate. Should not be used for production when compatibility with pure R is required.}
+}
+\value{
+No return value, executes R shiny app
 }
 \description{
-Function executes ShinyWizard builder or project when project zip file location is provided.
+Function executes ShinyWizard builder when file location is not provided
+or project app when project zip file location is provided.
 }
 \examples{
 
-\dontrun{
+\donttest{
 # Run to execute ShinyWizard builder
   RunShinyWizard()
 

@@ -5,6 +5,8 @@
 #'
 #' @param name theme name to be applied. No argument returns all available themes.
 #' 
+#' @return No return value
+#' 
 # @export
 
 ShinyWizzardTheme <- function(name = ""){
@@ -28,6 +30,8 @@ ShinyWizzardTheme <- function(name = ""){
 #' @description
 #' Shiny selector for themes. It returns a shiny ui code. 
 #' 
+#' @return Returns js code for ShinyWizzardThemeSelector 
+#' 
 #' @export
 
 ShinyWizzardThemeSelector <- function() { 
@@ -38,7 +42,7 @@ ShinyWizzardThemeSelector <- function() {
                 selected = "flatly", # starting theme
                ),
     
-  shiny::tags$script(               # ---- TO-DO: rewrite 
+  shiny::tags$script(               # ---- TO-DO: rewrite or move 
       "$('#tab2-shinytheme-selector')
   .on('change', function(el) {
     var allThemes = $(this).find('option').map(function() {
