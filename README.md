@@ -5,7 +5,7 @@
 <table width="100%" border="0">
   <tbody><tr>
     <td width="80%">ShinyWizard is <b>Shiny App</b> to build an <b>interactive presentation</b> for any R package. <br><br>ShinyWizard installs as standard R package and runs as Shiny app. </td>
-    <td width="20%"><img src="/ShinyWizard/inst/source/www/img/logo.png"></td>
+    <td width="20%"><img src="ShinyWizard/inst/source/www/img/logo.png"></td>
   </tr>
 </tbody></table>
 
